@@ -1,0 +1,23 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+
+}
+
+:root{
+    --white-color:rgb(243, 243, 243);
+    /* --white-color:white; */
+    /* --black-color:rgb(14, 14, 14); */
+    --black-color:#1b1b1b;
+    --red-color:#cf1846;
+}
+html {
+  overflow-x: hidden;
+}
