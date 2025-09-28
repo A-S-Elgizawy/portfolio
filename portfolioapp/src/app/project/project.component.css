@@ -16,7 +16,7 @@
 }
 .project .project-content .row .proj-title h1{
   /* font-size: 9rem; */
-   font-size: clamp(6rem, 15vw, 9rem);
+   font-size: clamp(5.2rem, 15vw, 9rem);
   color: var(--black-color);
   text-align: end;
   font-weight: 600;
@@ -160,9 +160,13 @@
      }
      .col-text p{
       text-align: center;
-      width: 70%;
+      width: 85%;
+     }
+     .project .project-content .row .proj-title p{
+  bottom: -4rem;
      }
 }
+
 /* ================ end project =============== */
 /* ================ start footer =============== */
 
@@ -327,7 +331,7 @@ footer .footer-content .title h1{
   bottom: 0rem;
   right: 0;
   /* transform: translateY(-55rem); */
-   font-size: clamp(5rem, 10vw, 9rem);
+   font-size: clamp(4.5rem, 10vw, 9rem);
    font-weight: 600;
    /* -webkit-text-stroke: 2px rgb(44, 44, 44); */
    margin: 0;
@@ -358,6 +362,7 @@ footer .last-footer p{
 }
 footer .last-footer{
   flex-direction: column;
+    padding: 2rem 1rem;
 }
 footer .last-footer p:nth-of-type(1){
   margin-bottom: 1rem;

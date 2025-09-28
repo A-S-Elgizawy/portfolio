@@ -316,7 +316,7 @@
 
 .about .about-content .item p{
   font-size: 1.6rem;
-  font-size: clamp(.9rem,2vw,1.6rem);
+  font-size: clamp(1rem,2vw,1.6rem);
   color: var(--white-color);
   font-weight: 500;
 }
@@ -334,6 +334,12 @@
     .about .about-content .item{
       width: 80%;
     }
+}
+@media (max-width:767px) {
+.about .about-content .item{
+  padding: .9rem;
+  text-align: justify;
+}
 }
 /* ================ end about =============== */
 /* ================ strat service =============== */
@@ -544,7 +550,7 @@ padding: 10% 3% 15%;
 }
 .project .project-content .row .proj-title h1{
   /* font-size: 9rem; */
-   font-size: clamp(5.5rem, 15vw, 9rem);
+   font-size: clamp(5.2rem, 15vw, 9rem);
   color: var(--black-color);
   text-align: end;
   font-weight: 600;
@@ -553,7 +559,7 @@ padding: 10% 3% 15%;
   right: 0;
 }
 .project .project-content .row .proj-title p{
-  font-size: clamp(1rem, 15vw, 2.5rem);
+  font-size: clamp(.9rem, 15vw, 2.5rem);
   font-weight: 500;
   color: var(--black-color);
   position: absolute;
@@ -673,9 +679,13 @@ padding: 10% 3% 15%;
 @media (max-width:991px) {
    .proj-title{
   justify-content: center;
+  /* margin-bottom: 1rem; */
 }
 }
 @media (max-width:767px) {
+.project .project-content .row .proj-title p{
+  bottom: -4rem;
+}
   .row-title{
     height: 50vh !important;
   }
@@ -1134,6 +1144,7 @@ footer .last-footer p{
 }
 footer .last-footer{
   flex-direction: column;
+  padding: 2rem 1rem;
 }
 footer .last-footer p:nth-of-type(1){
   margin-bottom: 1rem;
