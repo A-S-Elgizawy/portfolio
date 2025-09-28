@@ -273,7 +273,7 @@
   object-fit: cover;
 }
 .about .about-content h1{
-     font-size: clamp(6rem, 15vw, 9rem);
+     font-size: clamp(5.5rem, 15vw, 9rem);
      font-weight: 600;
      /* color: var(--white-color); */
      color: var(--black-colorr);
@@ -313,6 +313,7 @@
   top: 50%;
   transform: translate(-50%,200%);
 } */
+
 .about .about-content .item p{
   font-size: 1.6rem;
   font-size: clamp(.9rem,2vw,1.6rem);
@@ -381,7 +382,7 @@ padding: 10% 3% 15%;
   font-size: 1.1rem;
 }
 .service .service-content .header  h1{
-   font-size: clamp(5rem, 15vw, 9rem);
+   font-size: clamp(4.5rem, 15vw, 9rem);
   font-weight: 700;
   /* color: var(--black-color); */
   color: var(--white-color);
@@ -543,7 +544,7 @@ padding: 10% 3% 15%;
 }
 .project .project-content .row .proj-title h1{
   /* font-size: 9rem; */
-   font-size: clamp(6rem, 15vw, 9rem);
+   font-size: clamp(5.5rem, 15vw, 9rem);
   color: var(--black-color);
   text-align: end;
   font-weight: 600;
@@ -877,7 +878,7 @@ font-size: clamp(1.2rem, 8vw, 2.3rem);
   color: var(--black-color);
 }
 .contact .contact-content .row-contact .lets-talk h1{
-   font-size: clamp(2rem, 10vw, 9rem);
+   font-size: clamp(4rem, 10vw, 9rem);
   color: var(--white-color);
   margin-bottom: 3rem;
   font-weight: 700;
@@ -1102,7 +1103,7 @@ footer .footer-content .title h1{
   bottom: 0rem;
   right: 0;
   transform: translateY(-50rem);
-   font-size: clamp(5rem, 10vw, 9rem);
+   font-size: clamp(4.5rem, 10vw, 9rem);
    font-weight: 600;
    /* -webkit-text-stroke: 2px rgb(44, 44, 44); */
    margin: 0;
