@@ -315,6 +315,7 @@
 } */
 .about .about-content .item p{
   font-size: 1.6rem;
+  font-size: clamp(.9rem,2vw,1.6rem);
   color: var(--white-color);
   font-weight: 500;
 }
