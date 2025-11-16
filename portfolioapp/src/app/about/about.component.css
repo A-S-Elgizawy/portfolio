@@ -78,6 +78,7 @@
 .about .about-content .item{
   padding: .9rem;
   text-align: justify;
+  /* overflow-wrap: break-word */
 }
 }
 /* ================ end about =============== */

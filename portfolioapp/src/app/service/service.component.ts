@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router, RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -79,9 +79,12 @@ tl4.to(imgConsrv, { y: "20rem"}, )
       (serviceItem[index] as HTMLElement).style.height=`6.5rem`
     }
   })
-   })
+   }) 
 
 }
 
 
+
+
+ 
 }
