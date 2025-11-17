@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,14 +7,25 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
   imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
-})
+}) 
 export class HomeComponent implements OnInit,AfterViewInit{
-  constructor(private router: Router) {}
-
+  constructor(private router: Router , private el:ElementRef) {}
+  // @ViewChild('bgVideo') bgVideo:any;
+    @ViewChild('bgVideo') bgVideo!: ElementRef<HTMLVideoElement>;
   ngAfterViewInit(): void {
-    this.Gsap()
     // this.educationscroll()
+    this.Gsap()
     this.serviceGsap()
+    
+    //  == video ==
+        setTimeout(() => {
+      const video = this.bgVideo.nativeElement;
+      video.muted = true;     // مهم جداً للموبايل والمتصفحات الحديثة
+      video.play().catch((err) => {
+        console.log("Autoplay blocked:", err);
+      });
+    }, 50);
+
   }
   ngOnInit(): void {
     this.test()
@@ -159,8 +170,10 @@ fadeIn(){
   window.addEventListener('scroll', () => {
   elements.forEach(el => {
     const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 50) {
+    if (top < window.innerHeight - 50) {  
       el.classList.add('show');
+    }else {
+      el.classList.remove('show'); // يختفي عند الخروج
     }
 
   });

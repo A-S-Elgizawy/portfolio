@@ -56,8 +56,7 @@ tl4.to(imgConsrv, { y: "20rem"}, )
   const iconrotate =document.querySelectorAll(".rotate")
   const serviceItem =document.querySelectorAll(".service-item .item")
   const Ielement =document.querySelectorAll(".rotate i")
-
-     const detailsSrv =document.querySelectorAll(".detailsSrv")
+  const detailsSrv =document.querySelectorAll(".detailsSrv")
 
 
    iconrotate.forEach((ele,index)=>{
@@ -66,7 +65,7 @@ tl4.to(imgConsrv, { y: "20rem"}, )
     Ielement[index]?.classList.toggle("fa-minus")
     Ielement[index]?.classList.toggle("fa-plus")
     serviceItem[index]?.classList.toggle("active")
-    console.log("yes");
+
     
     
 
@@ -80,6 +79,11 @@ tl4.to(imgConsrv, { y: "20rem"}, )
     }
   })
    }) 
+
+   const test = document.querySelector('.test')
+   const testheght = test?.getBoundingClientRect().height
+   console.log(testheght);
+   
 
 }
 
