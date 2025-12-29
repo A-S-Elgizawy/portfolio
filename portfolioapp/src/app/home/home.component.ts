@@ -210,6 +210,7 @@ const partRight = document.querySelector(".part-right");
       scrub: true,
       pin: true,
       pinSpacing: true,
+      anticipatePin: 1,
     }
   });
 tl1.to(myData, { x:"-190%"}, 0)
@@ -232,6 +233,7 @@ const secondItem = document.querySelector(".secondItem")
       scrub: true,
       pin: true,
       pinSpacing: true,
+      anticipatePin: 1,
     }
   });
 
@@ -256,6 +258,7 @@ const secondItem = document.querySelector(".secondItem")
       scrub: true,
       pin: false,
       pinSpacing: true,
+      anticipatePin: 1,
     }
   });
      tl3.to(imgCon, { y: "20rem"}, )
@@ -275,6 +278,7 @@ const secondItem = document.querySelector(".secondItem")
       scrub: true,
       pin: false,
       pinSpacing: true,
+      anticipatePin: 1,
     }
   });
 tl4.to(imgConsrv, { y: "20rem"}, )
@@ -295,6 +299,7 @@ tl4.to(imgConsrv, { y: "20rem"}, )
       scrub: true,
       pin: true,
       pinSpacing: true,
+      anticipatePin: 1,
     }
   });
 
